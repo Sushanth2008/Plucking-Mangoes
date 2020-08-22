@@ -4,7 +4,7 @@ constructor(bodyA,pointB){
     var options={
     bodyA:bodyA,
     pointB:pointB,
-    stiffness:0.004,
+    stiffness:0.008,
     length:1
     }
 
@@ -17,10 +17,12 @@ World.add(world,this.body);
 }
 
 fly (){
-
     this.body.bodyA=null;
-    
     }
+
+attach(body){
+ this.body.bodyA=body;   
+}    
 
 display(){
 
